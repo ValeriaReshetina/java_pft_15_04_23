@@ -1,0 +1,4 @@
+/build/
+/.gradle/
+/out/
+/test-$(bySecond).log

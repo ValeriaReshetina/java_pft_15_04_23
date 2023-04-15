@@ -1,0 +1,182 @@
+<list>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 0</firstName>
+    <middleName>middleName 0</middleName>
+    <lastName>lastName 0</lastName>
+    <group>test 0</group>
+    <mobilePhone>mobile 0</mobilePhone>
+    <eMail>eMail 0</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 1</firstName>
+    <middleName>middleName 1</middleName>
+    <lastName>lastName 1</lastName>
+    <group>test 1</group>
+    <mobilePhone>mobile 1</mobilePhone>
+    <eMail>eMail 1</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 2</firstName>
+    <middleName>middleName 2</middleName>
+    <lastName>lastName 2</lastName>
+    <group>test 2</group>
+    <mobilePhone>mobile 2</mobilePhone>
+    <eMail>eMail 2</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 3</firstName>
+    <middleName>middleName 3</middleName>
+    <lastName>lastName 3</lastName>
+    <group>test 3</group>
+    <mobilePhone>mobile 3</mobilePhone>
+    <eMail>eMail 3</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 4</firstName>
+    <middleName>middleName 4</middleName>
+    <lastName>lastName 4</lastName>
+    <group>test 4</group>
+    <mobilePhone>mobile 4</mobilePhone>
+    <eMail>eMail 4</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 5</firstName>
+    <middleName>middleName 5</middleName>
+    <lastName>lastName 5</lastName>
+    <group>test 5</group>
+    <mobilePhone>mobile 5</mobilePhone>
+    <eMail>eMail 5</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 6</firstName>
+    <middleName>middleName 6</middleName>
+    <lastName>lastName 6</lastName>
+    <group>test 6</group>
+    <mobilePhone>mobile 6</mobilePhone>
+    <eMail>eMail 6</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 7</firstName>
+    <middleName>middleName 7</middleName>
+    <lastName>lastName 7</lastName>
+    <group>test 7</group>
+    <mobilePhone>mobile 7</mobilePhone>
+    <eMail>eMail 7</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 8</firstName>
+    <middleName>middleName 8</middleName>
+    <lastName>lastName 8</lastName>
+    <group>test 8</group>
+    <mobilePhone>mobile 8</mobilePhone>
+    <eMail>eMail 8</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 9</firstName>
+    <middleName>middleName 9</middleName>
+    <lastName>lastName 9</lastName>
+    <group>test 9</group>
+    <mobilePhone>mobile 9</mobilePhone>
+    <eMail>eMail 9</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 10</firstName>
+    <middleName>middleName 10</middleName>
+    <lastName>lastName 10</lastName>
+    <group>test 10</group>
+    <mobilePhone>mobile 10</mobilePhone>
+    <eMail>eMail 10</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 11</firstName>
+    <middleName>middleName 11</middleName>
+    <lastName>lastName 11</lastName>
+    <group>test 11</group>
+    <mobilePhone>mobile 11</mobilePhone>
+    <eMail>eMail 11</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 12</firstName>
+    <middleName>middleName 12</middleName>
+    <lastName>lastName 12</lastName>
+    <group>test 12</group>
+    <mobilePhone>mobile 12</mobilePhone>
+    <eMail>eMail 12</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 13</firstName>
+    <middleName>middleName 13</middleName>
+    <lastName>lastName 13</lastName>
+    <group>test 13</group>
+    <mobilePhone>mobile 13</mobilePhone>
+    <eMail>eMail 13</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 14</firstName>
+    <middleName>middleName 14</middleName>
+    <lastName>lastName 14</lastName>
+    <group>test 14</group>
+    <mobilePhone>mobile 14</mobilePhone>
+    <eMail>eMail 14</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 15</firstName>
+    <middleName>middleName 15</middleName>
+    <lastName>lastName 15</lastName>
+    <group>test 15</group>
+    <mobilePhone>mobile 15</mobilePhone>
+    <eMail>eMail 15</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 16</firstName>
+    <middleName>middleName 16</middleName>
+    <lastName>lastName 16</lastName>
+    <group>test 16</group>
+    <mobilePhone>mobile 16</mobilePhone>
+    <eMail>eMail 16</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 17</firstName>
+    <middleName>middleName 17</middleName>
+    <lastName>lastName 17</lastName>
+    <group>test 17</group>
+    <mobilePhone>mobile 17</mobilePhone>
+    <eMail>eMail 17</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 18</firstName>
+    <middleName>middleName 18</middleName>
+    <lastName>lastName 18</lastName>
+    <group>test 18</group>
+    <mobilePhone>mobile 18</mobilePhone>
+    <eMail>eMail 18</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstName>firstName 19</firstName>
+    <middleName>middleName 19</middleName>
+    <lastName>lastName 19</lastName>
+    <group>test 19</group>
+    <mobilePhone>mobile 19</mobilePhone>
+    <eMail>eMail 19</eMail>
+  </ru.stqa.pft.addressbook.model.ContactData>
+</list>
