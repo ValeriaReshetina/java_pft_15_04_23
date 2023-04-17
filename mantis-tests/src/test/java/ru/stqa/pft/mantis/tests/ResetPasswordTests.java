@@ -24,9 +24,14 @@ public class ResetPasswordTests extends TestBase {
 
     private SessionFactory sessionFactory;
     AdminHelper adminHelper = new AdminHelper(app);
+    long nowTime = System.currentTimeMillis();
+    String userName = String.format("user%s", nowTime);
+    String userPassword = "password";
+    String email = String.format("user%s@localhost", nowTime);
+    Integer createdUserId = null;
 
     @BeforeMethod
-    public void setUp() throws Exception {
+    public void setUpAndEnsurePreconditions() throws Exception {
         super.setUp();
         app.getDriver();
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
@@ -35,16 +40,6 @@ public class ResetPasswordTests extends TestBase {
         } catch (Exception e) {
             StandardServiceRegistryBuilder.destroy(registry);
         }
-    }
-
-    @Test
-    public void testForChangingPassword() throws MessagingException, IOException, InterruptedException {
-        long nowTime = System.currentTimeMillis();
-
-        String userName = String.format("user%s", nowTime);
-        String userPassword = "password";
-        String email = String.format("user%s@localhost", nowTime);
-
         app.jamesMailAgent().createUser(userName, userPassword);
         app.registration().start(userName, email);
 
@@ -52,11 +47,9 @@ public class ResetPasswordTests extends TestBase {
         String confirmationLink = getConfirmationLink(mailMessages, email);
 
         app.registration().finishRegistration(confirmationLink, "password");
-
         app.jamesMailAgent().drainEmail(userName, userPassword);
 
         Users usersSet = app.db().users();
-        Integer createdUserId = null;
 
         for (UserData user : usersSet) {
             if (user.getUsername().equals(userName)){
@@ -64,7 +57,10 @@ public class ResetPasswordTests extends TestBase {
             }
         }
         Assert.assertNotNull(createdUserId, "Can't get created user ID");
+    }
 
+    @Test
+    public void testForChangingPassword() throws MessagingException, IOException, InterruptedException {
         String newUserPassword = String.format("password%s", nowTime);
 
         adminHelper.authorization();
@@ -72,7 +68,7 @@ public class ResetPasswordTests extends TestBase {
         adminHelper.selectUserById(createdUserId);
         adminHelper.resetCurrentUserPassword();
 
-        mailMessages = app.jamesMailAgent().waitForMail(userName, userPassword, 60000);
+        List<MailMessage> mailMessages = app.jamesMailAgent().waitForMail(userName, userPassword, 60000);
         String resetPasswordLink = getConfirmationLink(mailMessages, email);
 
         adminHelper.changePassword(resetPasswordLink, userName, newUserPassword, newUserPassword);
