@@ -29,7 +29,7 @@ public class ResetPasswordTests extends TestBase {
     public void setUp() throws Exception {
         super.setUp();
         app.getDriver();
-        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
         try {
             sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
         } catch (Exception e) {
