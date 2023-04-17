@@ -6,6 +6,15 @@ public class IssueBugify {
     private int id;
     private String subject;
     private String description;
+    private String state_name;
+
+    public String getState_name() {
+        return state_name;
+    }
+
+    public void withStatus(String status) {
+        this.state_name = status;
+    }
 
     public int getId() {
         return id;
@@ -39,11 +48,12 @@ public class IssueBugify {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        IssueBugify issue = (IssueBugify) o;
+        IssueBugify that = (IssueBugify) o;
 
-        if (id != issue.id) return false;
-        if (!Objects.equals(subject, issue.subject)) return false;
-        return Objects.equals(description, issue.description);
+        if (id != that.id) return false;
+        if (!Objects.equals(subject, that.subject)) return false;
+        if (!Objects.equals(description, that.description)) return false;
+        return Objects.equals(state_name, that.state_name);
     }
 
     @Override
@@ -51,6 +61,7 @@ public class IssueBugify {
         int result = id;
         result = 31 * result + (subject != null ? subject.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (state_name != null ? state_name.hashCode() : 0);
         return result;
     }
 }
