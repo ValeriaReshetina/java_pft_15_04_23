@@ -4,15 +4,17 @@ import com.google.common.collect.ImmutableMap;
 import com.jcabi.github.*;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class GithubTests {
 
     @Test
-    public void testCommits() {
-        Github github = new RtGithub("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");
+    public void testCommits() throws IOException {
+        Github github = new RtGithub("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");
         RepoCommits commits = github.repos()
-                .get(new Coordinates.Simple("Valeria Reshetina", "java_pft_15_04_23")).commits();
+                .get(new Coordinates.Simple("ValeriaReshetina", "java_pft_15_04_23")).commits();
         for (RepoCommit commit : commits.iterate(new ImmutableMap.Builder<String, String>().build())) {
-            System.out.println(commit);
+            System.out.println(new RepoCommit.Smart(commit).message());
         }
     }
 }
