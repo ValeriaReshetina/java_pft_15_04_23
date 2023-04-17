@@ -1,8 +1,8 @@
 package ru.stqa.pft.mantis.appmanager;
 
 import biz.futureware.mantis.rpc.soap.client.*;
-import ru.stqa.pft.mantis.model.Issue;
-import ru.stqa.pft.mantis.model.Project;
+import ru.stqa.pft.mantis.modelMantis.IssueMantis;
+import ru.stqa.pft.mantis.modelMantis.Project;
 
 import javax.xml.rpc.ServiceException;
 import java.math.BigInteger;
@@ -34,21 +34,21 @@ public class SoapHelper {
         return mantisConnectPort;
     }
 
-    public Issue addIssue(Issue issue) throws MalformedURLException, ServiceException, RemoteException {
+    public IssueMantis addIssue(IssueMantis issueMantis) throws MalformedURLException, ServiceException, RemoteException {
         MantisConnectPortType mantisConnectPortType = getMantisConnect();
         String[] categories = mantisConnectPortType.mc_project_get_categories(
-                "administrator", "root", BigInteger.valueOf(issue.getProject().getId()));
+                "administrator", "root", BigInteger.valueOf(issueMantis.getProject().getId()));
         IssueData issueData = new IssueData();
-        issueData.setSummary(issue.getSummary());
-        issueData.setDescription(issue.getDescription());
+        issueData.setSummary(issueMantis.getSummary());
+        issueData.setDescription(issueMantis.getDescription());
         issueData.setProject(new ObjectRef(BigInteger.valueOf(
-                issue.getProject().getId()), issue.getProject().getName()));
+                issueMantis.getProject().getId()), issueMantis.getProject().getName()));
         issueData.setCategory(categories[0]);
         BigInteger issueId = mantisConnectPortType.mc_issue_add(
                 "administrator", "root", issueData);
         IssueData createdIssueData = mantisConnectPortType.mc_issue_get(
                 "administrator", "root", issueId);
-        return new Issue().withId(createdIssueData.getId().intValue()).withSummary(createdIssueData.getSummary())
+        return new IssueMantis().withId(createdIssueData.getId().intValue()).withSummary(createdIssueData.getSummary())
                 .withDescription(createdIssueData.getDescription())
                 .withProject(new Project().withId(createdIssueData.getProject().getId().intValue())
                         .withName(createdIssueData.getProject().getName()));

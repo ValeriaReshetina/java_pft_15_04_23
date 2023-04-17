@@ -1,10 +1,9 @@
 package ru.stqa.pft.mantis.tests;
 
-import biz.futureware.mantis.rpc.soap.client.IssueData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.stqa.pft.mantis.model.Issue;
-import ru.stqa.pft.mantis.model.Project;
+import ru.stqa.pft.mantis.modelMantis.IssueMantis;
+import ru.stqa.pft.mantis.modelMantis.Project;
 
 import javax.xml.rpc.ServiceException;
 import java.net.MalformedURLException;
@@ -13,8 +12,8 @@ import java.util.Set;
 
 public class SoapTests extends TestBase {
     @Test
-    public void testGetProjects() throws MalformedURLException, ServiceException, RemoteException {
-        skipIfNotFixed(1);
+    public void testMantisGetProjects() throws MalformedURLException, ServiceException, RemoteException {
+        skipIfNotFixedForMantis(1);
         Set<Project> projects = app.soap().getProjects();
         System.out.println(projects.size());
         for (Project project : projects) {
@@ -23,12 +22,12 @@ public class SoapTests extends TestBase {
     }
 
     @Test
-    public void testCreateIssue() throws MalformedURLException, ServiceException, RemoteException {
-        skipIfNotFixed(1);
+    public void testMantisCreateIssue() throws MalformedURLException, ServiceException, RemoteException {
+        skipIfNotFixedForMantis(1);
         Set<Project> projects = app.soap().getProjects();
-        Issue issue = new Issue().withSummary("Test issue").withDescription("Test issue description")
+        IssueMantis issueMantis = new IssueMantis().withSummary("Test issue").withDescription("Test issue description")
                 .withProject(projects.iterator().next());
-        Issue created = app.soap().addIssue(issue);
-        Assert.assertEquals(issue.getSummary(), created.getSummary());
+        IssueMantis created = app.soap().addIssue(issueMantis);
+        Assert.assertEquals(issueMantis.getSummary(), created.getSummary());
     }
 }

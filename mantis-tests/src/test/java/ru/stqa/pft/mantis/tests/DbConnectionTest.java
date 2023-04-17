@@ -3,8 +3,8 @@ package ru.stqa.pft.mantis.tests;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 import org.testng.annotations.Test;
-import ru.stqa.pft.mantis.model.UserData;
-import ru.stqa.pft.mantis.model.Users;
+import ru.stqa.pft.mantis.modelMantis.UserData;
+import ru.stqa.pft.mantis.modelMantis.Users;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;

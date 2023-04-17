@@ -1,7 +1,7 @@
-package ru.stqa.pft.mantis.model;
+package ru.stqa.pft.mantis.modelMantis;
 
 
-public class Issue {
+public class IssueMantis {
 
     private int id;
     private String summary;
@@ -12,7 +12,7 @@ public class Issue {
         return id;
     }
 
-    public Issue withId(int id) {
+    public IssueMantis withId(int id) {
         this.id = id;
         return this;
     }
@@ -21,7 +21,7 @@ public class Issue {
         return summary;
     }
 
-    public Issue withSummary(String summary) {
+    public IssueMantis withSummary(String summary) {
         this.summary = summary;
         return this;
     }
@@ -30,7 +30,7 @@ public class Issue {
         return description;
     }
 
-    public Issue withDescription(String description) {
+    public IssueMantis withDescription(String description) {
         this.description = description;
         return this;
     }
@@ -39,7 +39,7 @@ public class Issue {
         return project;
     }
 
-    public Issue withProject(Project project) {
+    public IssueMantis withProject(Project project) {
         this.project = project;
         return this;
     }

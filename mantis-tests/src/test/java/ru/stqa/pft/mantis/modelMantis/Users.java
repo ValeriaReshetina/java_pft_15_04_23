@@ -1,4 +1,4 @@
-package ru.stqa.pft.mantis.model;
+package ru.stqa.pft.mantis.modelMantis;
 
 import com.google.common.collect.ForwardingSet;
 

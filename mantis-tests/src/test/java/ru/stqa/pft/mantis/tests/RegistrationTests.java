@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 import ru.lanwen.verbalregex.VerbalExpression;
-import ru.stqa.pft.mantis.model.MailMessage;
+import ru.stqa.pft.mantis.modelMantis.MailMessage;
 
 import static org.testng.Assert.*;
 

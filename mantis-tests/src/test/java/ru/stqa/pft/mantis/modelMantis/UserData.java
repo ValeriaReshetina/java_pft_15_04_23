@@ -1,7 +1,6 @@
-package ru.stqa.pft.mantis.model;
+package ru.stqa.pft.mantis.modelMantis;
 
 import com.google.gson.annotations.Expose;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
