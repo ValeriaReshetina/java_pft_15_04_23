@@ -1,4 +1,4 @@
-package test.java.ru.stqa.pft.sandbox;
+package ru.stqa.pft.sandbox;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
