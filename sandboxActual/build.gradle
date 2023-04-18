@@ -10,3 +10,7 @@ dependencies {
     implementation 'com.slickqa:testng:7.0.0-7'
 }
 
+test {
+    useTestNG()
+}
+
