@@ -76,7 +76,7 @@ public class ApplicationManager {
                 WebDriverManager.chromedriver().setup();
                 wd = new ChromeDriver();
             } else if (browser.equals(BrowserType.IE)) {
-                WebDriverManager.iedriver();
+                WebDriverManager.iedriver().setup();
                 wd = new InternetExplorerDriver();
             }
 
