@@ -1,8 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
